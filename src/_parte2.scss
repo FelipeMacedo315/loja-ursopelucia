@@ -1,0 +1,21 @@
+.Footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+border-top: solid 1px;
+
+border-color: rgb(180, 172, 172);
+
+   input{
+       background-color: rgba(230, 207, 207, 0.884);
+       height: 3vh;
+       width: 25vw;
+       color: gray;
+   }
+   button{
+    background-color: green;
+    height: 4vh;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
+}

@@ -1,0 +1,45 @@
+
+.imagemheader{
+
+
+img{
+      height: 50vh;
+      width: 98vw;
+  }
+
+}
+.botoes{
+  display: flex;
+  justify-content: center;
+}
+
+
+.produto{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+&:hover{
+  color: gray;
+}
+
+}
+.todos_os_produtos{
+  display: grid;
+  grid-template-columns:  auto auto auto;
+
+  margin-left: 10%;
+P{
+  color: black;
+  font-size: 3vh;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: underline
+}
+
+
+}
+
+@import './parte2';
+
