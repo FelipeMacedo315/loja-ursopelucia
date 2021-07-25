@@ -3,7 +3,7 @@ import Header from './Header'
 import Produtos from './produtos'
 import {Link}from 'react-router-dom'
 import Footer from './footer'
-function Mestre() {
+function Home() {
 
  
     
@@ -58,9 +58,8 @@ function Mestre() {
             <Footer/>
 
 
-    
         </>
     )
       
 }
-export default Mestre
+export default Home

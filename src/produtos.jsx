@@ -4,6 +4,9 @@ import {useParams} from 'react-router-dom'
 import Header from './Header'
 import Footer from './footer'
 import Meucontexto from './context'
+import { Link } from 'react-router-dom'
+
+
   
 function Produtos() {
   const[carrinho_total,setcarrinho_total]=useState(0)
@@ -20,22 +23,22 @@ function Produtos() {
   }
 const {id} = useParams()
 const compararid = all_products[id] || all_products['zebra']  
-
+console.log(compararid)
+                     
   function addcarrinho (){
    setcarrinho_total(oldTotal => oldTotal + compararid.preço)
    
   }
         return(
           <>
-        
-
+      
           <Meucontexto.Provider value={{teste,setteste}}>
           <Header/>
              <div className='produto'>
               <img src={compararid.img} />
               <p>{compararid.nome} <br></br> {compararid.preco}</p>
-              <button onClick={addcarrinho}>Comprar</button>
-              <h1>{carrinho_total}</h1>
+<Link to={`/paginacompra/${compararid.id}`}> <button onClick={addcarrinho}>Comprar</button> </Link>
+             
             </div>
             <Footer/>
             </Meucontexto.Provider>
